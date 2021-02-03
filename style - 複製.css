@@ -1,0 +1,196 @@
+$enable-responsive-font-sizes: false;
+
+html {
+  background-color: #103b54;
+
+
+}
+/*文字設定*/
+
+
+
+/*頁面設定*/
+h3, h5 , p {
+  font-family: "Noto+Sans+TC";
+  color:#fff;
+  font-size: 14px;
+  padding-top: 15%;
+}
+.main {
+  margin: auto;
+}
+.home {
+  height: 100vh;
+  background-color: #103b54;
+}
+
+.title {
+  height: 200px;
+  width: 100%;
+  background-color: #103b54;
+  display: block;
+}
+.logo {
+  position: relative;
+  left: -25%;
+  height: 100%;
+  transform: scale(.4);
+  background-image: url("./images/Logo.png");
+  background-repeat: no-repeat;
+}
+.mainspcae {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+
+}
+.BG {
+  height: 100%;
+  position:relative;
+  background-image: url("./images/main.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  opacity: 1;
+}
+.seletion {
+  width: 40%;
+  height: 42vh;
+  position: relative;
+  left: 43%;
+  top: 48%;
+  display: flex;
+  text-align: center;
+  line-height: 5pt;
+
+
+}
+
+@media (min-width:1440px){
+  h5 {
+    display: none;
+  }
+  h3 {
+    display: block;
+  }
+  p {
+    font-family: "Noto+Sans+TC";
+    color:#fff;
+    font-size: 1.0rem;
+  }
+}
+@media (min-width:1200px) {
+
+
+  h5 {
+    display: none;
+  }
+  .title {
+    height: 20vh;
+  }
+  .logo {
+
+  }
+  .BG {
+    height: 100%;
+    background-image: url("./images/main.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .seletion {
+    width: 75%;
+    height: 42vh;
+    position: relative;
+    left: 0%;
+    top: 48%;
+    display: flex;
+  }
+
+
+
+  .S1 , .S2 , .S3 {
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50%;
+    padding-left: 15%;
+    height: 8em;
+    background-color: #103b54;
+    border: 10px solid #fff;
+    border-radius: 75px;
+  }
+}
+@media all and (min-width:512px) and (max-width:1024px) {
+  h3 {
+    display: none;
+
+  }
+
+  p {
+    font-family: "Noto+Sans+TC";
+    color:#fff;
+    font-size: .5rem;
+  }
+
+  .title {
+    height: 80px;
+    width: 100%;
+    background-color: #103b54;
+    display: block;
+  }
+  .logo {
+    background-size: 50%;
+  }
+}
+@media (max-width:512px)  {
+  h3 {
+    display: none;
+
+  }
+  p {
+    font-family: "Noto+Sans+TC";
+    color:#fff;
+    font-size: 5px;
+  }
+  .BG {
+    height: 100%;
+    position:relative;
+    background-image: url("./images/main.jpg");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .S1 , .S2 , .S3 {
+    position: relative;
+    margin: 80px;
+    width: 200px;
+    height: 120px;
+    background-color: #103b54;
+    border: 10px solid #fff;
+    border-radius: 75px;
+  }
+}
+.S1 , .S2 , .S3 {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 50%;
+  height: 8em;
+  background-color: #103b54;
+  border: 10px solid #fff;
+  border-radius: 75px;
+}
+
+
+.aboutus {
+  margin-top: 10px;
+  height: 100vh;
+  background-color: #deddf1;
+  overflow: hidden;
+}
