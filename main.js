@@ -216,5 +216,5 @@ sendout.addEventListener('click',function(){
         FansName.value = ''
         content.value = ''
     }
-    
+
 })
