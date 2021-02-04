@@ -335,7 +335,7 @@ p {
 .BG02 {
   
   background-color: #323b57c7;
-  background-image: url('./images/WJSN-COVER.jpg');
+  background-image: url('./images/WJSN-COVER-new.jpg');
   background-size:cover ;
   background-repeat: no-repeat;
   background-blend-mode: screen;
@@ -371,7 +371,7 @@ p {
   position: relative;
   top: 15%;
   left:60%;
-  background-image: url("../images/992285445BD45B2430.png");
+  background-image: url("./images/992285445BD45B2430.png");
   background-repeat: no-repeat;
   background-size: 240px auto;
   
@@ -662,53 +662,51 @@ p {
 }
 
 .talkingBox {
-  
   position: relative;
+  padding: 45px;
   margin: 10% auto ;
   width: 60%;
-  height: 600px;
+  height: 350px;
   background-color: #eee;
   border-radius: 20px;
   
-  
 }
 
-.talkingBox form{
-  position: relative;
-  height: 80%;
-  width: 100%;
-  margin: 5% auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.talkingBox input {
-  margin: 15px 0;
-  margin: 15px auto;
-}
 .name {
+  padding: 1px 8px;
+  display: block;
   border:  2px solid #999;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 120px;
+  width: 80px;
   height: 24px;
   border-radius: 8px;
-  display: block;
+  letter-spacing: 0.03em;
 }
 .content {
+  display: block;
   border:  2px solid #999;
   position: relative;
-  margin: 0 auto;
-  width: 360px;
-  height: 45%;
+  width: 550px;
+  height: 180px;
   border-radius: 8px;
-  display: block;
+  letter-spacing: 0.05em;
 }
 
 .sendout {
-  width: 100px;
-  height: 35px;
+
+  display: block;
+  padding: 5px 20px;
+  background-color: rgb(42, 112, 202);
+  border: 0px;
+  border-radius: 15px;
+  color: #eee;
+  font-family: '微軟正黑體';
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0.45em;
+}
+
+.name, .content, .sendout {
+  margin: 1.2em 0;
+  margin-left: 5%;
 }

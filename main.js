@@ -3,6 +3,7 @@
 let page01 = document.querySelector('.back')
 let page02 = document.querySelector('.S1')
 let page03 = document.querySelector('.S2')
+let page04 = document.querySelector('.S3')
 
 
 
@@ -30,6 +31,13 @@ page03.addEventListener('click',function(){
     })
 })
 
+page04.addEventListener('click',function(){
+    let where = document.querySelector('.comment')
+    window.scrollTo({
+        top:where.offsetTop,
+        behavior:"smooth"
+    })
+})
 
 
 //音樂區///
@@ -191,3 +199,22 @@ function RedlineEvenListener(){
         return
     }
 }
+
+
+//留言板系統
+
+let FansName = document.querySelector('.name')
+let content = document.querySelector('.content')
+let sendout = document.querySelector('.sendout')
+sendout.addEventListener('click',function(){
+    if(FansName.value == ''){
+        alert('UJUNG 記得輸入名字哦')
+    } else if (content.value == ''){
+        alert('UJUNG 請大聲的告訴我們你想說的話吧')
+    } else {
+        alert('感謝你的留言')
+        FansName.value = ''
+        content.value = ''
+    }
+    
+})
