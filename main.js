@@ -34,7 +34,7 @@ page03.addEventListener('click',function(){
 
 //音樂區///
 const AsYouWish = {
-    Img:'../images/Asyouwish.jpg',
+    Img:'../images/68adf9c9b7611b605e8dd535aba20f76891b0471d90c54186db96729adcfc5edf3a7ce6b573e6219f33e3e49941d44b31b171dfaa7b7a13342e5e61a9c24c321328c7f5366d4be468a09c267fbde81936473a4fd0d5579427d124091911ec43c5cf66a795c36b22a6b042374.jpg',
     Name:'As you wish',
     Time:3+':'+33,
     TimeSec:213,
@@ -84,7 +84,7 @@ let music04 = document.querySelector('.LaLaLove')
 //播放器上的資訊
 
 function who(i) {
-    document.querySelector('.player').style.opacity= 1; //顯示預設為隱藏的播放器       
+    document.querySelector('.player').style.display = 'flex' //顯示預設為隱藏的播放器       
     console.log('who:' + i) //提示歌曲
     plyaerStates.innerHTML = 'pause_circle' //預設不播放任何歌曲 顯示暫停中
     Icon = document.querySelector('.icon') 
@@ -118,17 +118,17 @@ let Redline = document.querySelector('.Redline')
 
 function playing(){
     
-    //console.log('進度條速率:'+total+'px/s')
+    console.log('進度條速率:'+total+'px/s')
     
     let songlister = setInterval(() => {
-        //console.log('playing~')
+        console.log('playing~')
         
             if (Math.round(total) == 100){
                 clearInterval(songlister)
-                //console.log('end')
+                console.log('end')
             }
             total =  (audio.currentTime / audio.duration) * 100 //進度條速率
-            //console.log('進度條速率:'+Math.round(total)+'%')
+            console.log('進度條速率:'+Math.round(total)+'%')
             //console.log(currentTime)
             if (Math.round(total) != 100){
                 Redline.style.width =  total + '%'// console.log('進度:'+total*currentTime)
