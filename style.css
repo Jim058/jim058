@@ -659,13 +659,18 @@ p {
   height: 100vh;
   overflow: hidden;
   background-color: #1d3542;
+  text-align: center;
 }
-
+.NameComment {
+  color: #eee;
+  font-size: 3em;
+  padding: 150px 0 0 0;
+}
 .talkingBox {
   position: relative;
   padding: 45px;
-  margin: 10% auto ;
-  width: 60%;
+  margin: 25px auto 0% ;
+  width: 43%;
   height: 350px;
   background-color: #eee;
   border-radius: 20px;
@@ -686,7 +691,7 @@ p {
   display: block;
   border:  2px solid #999;
   position: relative;
-  width: 550px;
+  width: 85%;
   height: 180px;
   border-radius: 8px;
   letter-spacing: 0.05em;
@@ -709,5 +714,5 @@ p {
 .name, .content, .sendout {
   margin: 1.2em 0;
   margin-left: 5%;
-  
+
 }

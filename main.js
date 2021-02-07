@@ -206,15 +206,36 @@ function RedlineEvenListener(){
 let FansName = document.querySelector('.name')
 let content = document.querySelector('.content')
 let sendout = document.querySelector('.sendout')
+let data = {
+    'name' : FansName.value,
+    'content':content.value
+}
 sendout.addEventListener('click',function(){
     if(FansName.value == ''){
         alert('UJUNG 記得輸入名字哦')
     } else if (content.value == ''){
         alert('UJUNG 請大聲的告訴我們你想說的話吧')
     } else {
-        alert('感謝你的留言')
+        sendData(data)
+        
         FansName.value = ''
         content.value = ''
     }
 
 })
+
+function sendData(data){
+    let request = new XMLHttpRequest();
+    request.open('GET', 'https://script.google.com/macros/s/AKfycbxXbDeick52I83BOHY0YQETANSMugQl-LrXQOTNvPZ4rWds3ZlDbYfNhw/exec');
+    request.responseType = 'text';
+    request.onload = function() {
+        console.log(request.response)
+        
+    };
+    request.send(data)
+    // console.log('完成')
+}
+//1rWmvDUTrDqu1BZaWjDsg9pa7Q61-QItOAcmpQjFQK91Ln7IHomgEsJ56
+
+//https://script.google.com/macros/s/AKfycbxXbDeick52I83BOHY0YQETANSMugQl-LrXQOTNvPZ4rWds3ZlDbYfNhw/exec
+//AKfycbxXbDeick52I83BOHY0YQETANSMugQl-LrXQOTNvPZ4rWds3ZlDbYfNhw
